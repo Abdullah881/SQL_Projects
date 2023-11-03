@@ -1,0 +1,5 @@
+species_class int not null CONSTRAINT fk_class_id FOREIGN KEY REFERENCES tbl_class(class_id) on UPDATE CASCADE ON DELETE CASCADE,
+species_order int not null CONSTRAINT fk_order_id FOREIGN KEY REFERENCES tbl_order(order_id) on UPDATE CASCADE ON DELETE CASCADE,
+species_habitat int not null CONSTRAINT fk_habitat_id FOREIGN KEY REFERENCES tbl_habitat(habitat_id) on UPDATE CASCADE ON DELETE CASCADE,
+species_nutrition int not null CONSTRAINT fk_nutrition_id FOREIGN KEY REFERENCES tbl_nutrition(nutrition_id) on UPDATE CASCADE ON DELETE CASCADE,
+species_care int not null CONSTRAINT fk_care_id FOREIGN KEY REFERENCES tbl_care(care_id) on UPDATE CASCADE ON DELETE CASCADE,
